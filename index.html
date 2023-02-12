@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2>Roleta Russa</h2>
+
+
+    <select id='rolo' OnChange="atualizarSelect()" >
+    <option disabled selected value="nada">---</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    </select>
+
+    <h2>Tambor: <span id="tambor"></span></h2>
+
+    <h2>Resultado: <span id="roleta-resultado"></span></h2>
+
+    <button onClick=" generateTamborValue()" id="atirar">Atirar!</button>
+
+    <script src="./game.js"></script>
+</body>
+</html>
